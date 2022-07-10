@@ -1,28 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,200;0,300;0,400;0,500;1,300;1,500&family=Atkinson+Hyperlegible:ital@0;1&display=swap');
 
-
-/* Color Theme Swatches in Hex */
-$ForegroundDark: #1B0002;
-$ForegroundLight: #A16D73;
-$BackgroundColor: #FBF1E9;
-$ForegroundWhite: #FFFFFF;
-$ColorPrimary: #1A0004;
-
-// Font Familys
-$Archivo: 'Archivo',
-sans-serif;
-$Atkinson: 'Atkinson Hyperlegible',
-sans-serif;
-
-// Main-container widths
-$MainContainerWidthLG: 75%;
-$MainContainerWidthMD: 86%;
-$MainContainerWidthSM: 90%;
-
-// Transition speeds
-$TransitionSpeed: all 400ms ease;
-
-
+@import 'variables';
 
 * {
   margin: 0;
@@ -83,8 +61,8 @@ section {
   }
 }
 
-.text-light {
-  color: $ForegroundLight;
+.text-dark {
+  color: $ForegroundDark;
 }
 
 a {
@@ -92,7 +70,7 @@ a {
   transition: $TransitionSpeed;
 
   &:hover {
-    color: $ForegroundWhite;
+    color: $ForegroundLight;
   }
 }
 
@@ -107,8 +85,8 @@ a {
   transition: $TransitionSpeed;
 
   &:hover {
-    background: $ForegroundWhite;
-    color: $ForegroundLight;
+    background: $ColorSecondary;
+    color: $ForegroundWhite;
     border-color: transparent;
   }
 }
