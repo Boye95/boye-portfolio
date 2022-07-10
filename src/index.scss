@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,200;0,300;0,400;0,500;1,300;1,500&family=Atkinson+Hyperlegible:ital@0;1&display=swap');
+
+/* Color Theme Swatches in Hex */
+$ForegroundDark: #1B0002;
+$ForegroundLight: #FE6178;
+$BackgroundColor: #FBF1E9;
+$ForegroundWhite: #FFFFFF;
+
+// Font Familys
+$Archivo: 'Archivo',
+sans-serif;
+$Atkinson: 'Atkinson Hyperlegible',
+sans-serif;
+
+// Main-container widths
+$MainContainerWidthLG: 75%;
+$MainContainerWidthMD: 86%;
+$MainContainerWidthSM: 90%;
+
+// Transition speeds
+$TransitionSpeed: all 400ms ease;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  font-family: $Archivo;
+  font-size: 16px;
+  color: $ForegroundDark;
+  background-color: $BackgroundColor;
+  line-height: 1.7;
+}
+
+// Global Styles
+
+.main-container {
+  width: $MainContainerWidthLG;
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 500;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+section {
+  margin-top: 8rem;
+
+  >h2,
+  >h5 {
+    text-align: center;
+    color: $ForegroundDark;
+  }
+
+  >h2 {
+    margin-bottom: 3rem;
+    color: $ForegroundLight;
+  }
+}
+
+.text-light {
+  color: $ForegroundLight;
+}
+
+a {
+  color: $ForegroundDark;
+  transition: $TransitionSpeed;
+
+  &:hover {
+    color: $ForegroundLight;
+  }
+}
+
+.btn {
+  width: max-content;
+  display: inline-block;
+  color: $ForegroundDark;
+  padding: 0.5rem 1rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  border: 1px solid $ForegroundDark;
+  transition: $TransitionSpeed;
+
+  &:hover {
+    background: ForegroundWhite;
+    color: $ForegroundLight;
+    border-color: transparent;
+  }
+}
+
+img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+// MEDIA QUERYS [MD]
+@media screen and (max-width: 1024px) {
+  .main-container {
+      width: $MainContainerWidthMD;
+  }
+
+  section {
+      margin-top: 6rem;
+  }
+}
+
+// MEDIA QUERY [SM]
+@media screen and (max-width: 600px) {
+  .main-container {
+      width: $MainContainerWidthSM;
+  }
+
+  section {
+    > h2 {
+      margin-bottom: 2rem;
+    } 
+  }
+}
