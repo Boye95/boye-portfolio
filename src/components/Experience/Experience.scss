@@ -1,1 +1,99 @@
 @import '../../variables';
+
+.experience__container {
+    width: 60%;
+    margin: 0 auto;
+
+    >div {
+        background-color: $ColorTertiary;
+        padding: 2.4rem 5rem;
+        border-radius: 2rem;
+        border: 1px solid transparent;
+        color: $ForegroundWhite;
+        transition: $TransitionSpeed;
+
+        h3 {
+            text-align: center;
+            margin-bottom: 2rem;
+            color: $ForegroundWhite;
+        }
+
+        .text-dark {
+            color: $ForegroundWhite;
+        }
+
+        .experience__content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            row-gap: 2rem;
+
+            .experience__details {
+                display: flex;
+                gap: 1rem;
+
+                .experience__details-icons {
+                    margin-top: 6px;
+                }
+            }
+
+        }
+
+        &:hover {
+            background: transparent;
+            border-color: $ColorTertiary;
+            cursor: default;
+
+            h3 {
+                text-align: center;
+                margin-bottom: 2rem;
+                color: $ForegroundDark;
+            }
+
+            .text-dark {
+                color: $ForegroundDark;
+            }
+
+            h4 {
+                color: $ForegroundDark;
+            }
+
+            .experience__details-icons {
+                color: $ForegroundDark;
+            }
+        }
+    }
+
+}
+
+
+// Media Queries (MD)
+@media screen and (max-width: 1024px) {
+    .experience__container {
+        width: 80%;
+
+        >div {
+            width: 80%;
+            padding: 2rem;
+            margin: 0 auto;
+
+            .experience__content {
+                padding: 1rem;
+            }
+        }
+    }
+
+
+}
+
+// Media Queries (SD)
+@media screen and (max-width: 600px) {
+    .experience__container {
+        width: 90%;
+        gap: 1rem;
+
+        >div {
+            width: 100%;
+            padding: 2rem 1rem;
+        }
+    }
+}
