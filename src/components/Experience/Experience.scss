@@ -1,8 +1,9 @@
 @import '../../variables';
 
 .experience__container {
-    width: 60%;
-    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
 
     >div {
         background-color: $ColorTertiary;
