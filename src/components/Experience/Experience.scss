@@ -70,7 +70,7 @@
 // Media Queries (MD)
 @media screen and (max-width: 1024px) {
     .experience__container {
-        width: 80%;
+        grid-template-columns: 1fr;
 
         >div {
             width: 80%;
@@ -89,7 +89,6 @@
 // Media Queries (SD)
 @media screen and (max-width: 600px) {
     .experience__container {
-        width: 90%;
         gap: 1rem;
 
         >div {
