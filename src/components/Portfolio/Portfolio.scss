@@ -4,37 +4,69 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2.5rem;
+
+    .portfolio__item {
+        background: $ForegroundDark;
+        padding: 1.2rem;
+        border-radius: 2rem;
+        border: 1px solid transparent;
+        transition: $TransitionSpeed;
+
+        .portfolio__item-image {
+            border-radius: 1.5rem;
+            overflow: hidden;
+            transition: $TransitionSpeed;
+        }
+
+        h3 {
+            margin: 1.2rem 0 2rem;
+            color: $ForegroundWhite;
+        }
+
+        .portfolio__item-cta {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1rem;
+
+            .github {
+                color: $ForegroundWhite;
+                border-color: $ForegroundWhite;
+            }
+
+            .live {
+                background: $ForegroundWhite;
+                color: $ForegroundDark;
+            }
+        }
+
+        &:hover {
+            border-color: $ForegroundDark;
+            background: transparent;
+
+            .portfolio__item-image {
+                filter: brightness(0.8);
+                transform: skewY(-5deg);
+            }
+
+            h3 {
+                color: $ForegroundDark;
+            }
+            .portfolio__item-cta {
+                .github {
+                    color: $ForegroundDark;
+                    border-color: $ForegroundDark;
+                }
+    
+                .live {
+                    background: $ForegroundDark;
+                    color: $ForegroundWhite;
+                }
+            }
+        }
+    }
 }
 
-.portfolio__item {
-    background: var(--color-bg-variant);
-    padding: 1.2rem;
-    border-radius: 2rem;
-    border: 1px solid transparent;
-    transition: var(--transition);
-}
-
-.portfolio__item:hover {
-    border-color: var(--color-primary-variant);
-    background: transparent;
-}
-
-.portfolio__item-image {
-    border-radius: 1.5rem;
-    overflow: hidden;
-}
-
-.portfolio__item h3 {
-    margin: 1.2rem 0 2rem;
-}
-
-.portfolio__item-cta {
-    display: flex;
-    gap: 1rem;
-    margin-bottom: 1rem;
-}
-
-/*Media Queries (Medium Devices)*/
+// Media Queries (MD)
 @media screen and (max-width: 1024px) {
     .portfolio__container {
         grid-template-columns: 1fr 1fr;
@@ -42,7 +74,7 @@
     }
 }
 
-/*Media Queries (Small Devices)*/
+// Media Queries (SM)
 @media screen and (max-width: 600px) {
     .portfolio__container {
         grid-template-columns: 1fr;
