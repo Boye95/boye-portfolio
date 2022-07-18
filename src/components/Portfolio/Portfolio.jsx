@@ -10,7 +10,7 @@ import './Portfolio.scss'
 
 const Portfolio = () => {
   return (
-    <div></div>
+    <div>bh</div>
 //     <section id={'portfolio'}>
 //       <h5>My Recent Work</h5>
 //       <h2>Portfolio</h2>
