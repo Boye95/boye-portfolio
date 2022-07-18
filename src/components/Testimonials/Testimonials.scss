@@ -1,1 +1,63 @@
 @import '../../variables';
+
+.main-container.testimonials__container {
+    width: 40%;
+    padding-bottom: 4rem;
+
+    .testimonial {
+        background: $ForegroundDark;
+        text-align: center;
+        padding: 2rem;
+        border-radius: 2rem;
+        user-select: none;
+
+
+        .client__avatar {
+            width: 4rem;
+            aspect-ratio: 1/1;
+            overflow: hidden;
+            border-radius: 50%;
+            margin: 0 auto 1rem;
+            border: 0.4rem solid $BackgroundColor;
+        }
+
+        .client__name {
+            color: $BackgroundColor;
+        }
+        .client__review {
+            color: $ForegroundWhite;
+            font-weight: 300;
+            display: block;
+            width: 80%;
+            margin: 0.8rem auto 0;
+        }
+
+        .swiper-pagination-clickable .swiper-pagination-bullet .swiper-pagination-bullet-active {
+            background: $ForegroundDark;
+        }
+    }
+}
+
+// Media Queries (MD)
+@media screen and (max-width: 1024px) {
+
+    .main-container.testimonials__container{
+        width: 60%;
+    }
+
+}
+
+/*Media Queries (Small Devices)*/
+@media screen and (max-width: 600px) {
+
+    .main-container.testimonials__container {
+        width: $MainContainerWidthSM;
+        
+        .testimonial {
+            .client__review {
+                width: $MainContainerWidthSM;
+            }
+        }
+    } 
+
+}
