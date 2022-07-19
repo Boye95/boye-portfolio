@@ -26,6 +26,7 @@
         }
         .client__review {
             color: $ForegroundWhite;
+            opacity: 0.9;
             font-weight: 300;
             display: block;
             width: 80%;
@@ -33,7 +34,7 @@
         }
 
         .swiper-pagination-clickable .swiper-pagination-bullet .swiper-pagination-bullet-active {
-            background: $ForegroundDark;
+            background: red;
         }
     }
 }

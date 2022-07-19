@@ -7,37 +7,38 @@ import Avatar3 from '../../files/testimony.png'
 import Avatar4 from '../../files/testimony.png'
 import { Pagination } from 'swiper'
 import { Swiper, SwiperSlide } from 'swiper/react'
-import 'swiper/css'
-import 'swiper/css/pagination'
+import 'swiper/scss'
+import 'swiper/scss/pagination'
+
+const data = [
+  {
+    avatar: Avatar1,
+    name: 'Ben Jackizz',
+    review:
+      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque beatae culpa dolorem error eum, expedita illo laboriosam magni mollitia perferendis provident quae quaerat quidem quod sint? Consectetur minima necessitatibus quam?'
+  },
+  {
+    avatar: Avatar2,
+    name: 'Hugh  Remi',
+    review:
+      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque beatae culpa dolorem error eum, expedita illo laboriosam magni mollitia perferendis provident quae quaerat quidem quod sint? Consectetur minima necessitatibus quam?'
+  },
+  {
+    avatar: Avatar3,
+    name: 'Ajayi Ogidiolu',
+    review:
+      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque beatae culpa dolorem error eum, expedita illo laboriosam magni mollitia perferendis provident quae quaerat quidem quod sint? Consectetur minima necessitatibus quam?'
+  },
+  {
+    avatar: Avatar4,
+    name: 'Baba Sule',
+    review:
+      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque beatae culpa dolorem error eum, expedita illo laboriosam magni mollitia perferendis provident quae quaerat quidem quod sint? Consectetur minima necessitatibus quam?'
+  }
+]
 
 const Testimonials = () => {
-  const data = [
-    {
-      avatar: Avatar1,
-      name: 'Ben Jackizz',
-      review:
-        'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque beatae culpa dolorem error eum, expedita illo laboriosam magni mollitia perferendis provident quae quaerat quidem quod sint? Consectetur minima necessitatibus quam?'
-    },
-    {
-      avatar: Avatar2,
-      name: 'Hugh  Remi',
-      review:
-        'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque beatae culpa dolorem error eum, expedita illo laboriosam magni mollitia perferendis provident quae quaerat quidem quod sint? Consectetur minima necessitatibus quam?'
-    },
-    {
-      avatar: Avatar3,
-      name: 'Ajayi Ogidiolu',
-      review:
-        'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque beatae culpa dolorem error eum, expedita illo laboriosam magni mollitia perferendis provident quae quaerat quidem quod sint? Consectetur minima necessitatibus quam?'
-    },
-    {
-      avatar: Avatar4,
-      name: 'Baba Sule',
-      review:
-        'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque beatae culpa dolorem error eum, expedita illo laboriosam magni mollitia perferendis provident quae quaerat quidem quod sint? Consectetur minima necessitatibus quam?'
-    }
-  ]
-
+  
   return (
     <section id={'testimonials'}>
       <h5>Review from Clients</h5>
