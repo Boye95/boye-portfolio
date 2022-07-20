@@ -5,7 +5,7 @@ import Avatar1 from '../../files/testimony.png'
 import Avatar2 from '../../files/testimony.png'
 import Avatar3 from '../../files/testimony.png'
 import Avatar4 from '../../files/testimony.png'
-import { Pagination } from 'swiper'
+import { Pagination, Autoplay } from 'swiper'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/scss'
 import 'swiper/scss/pagination'
@@ -38,16 +38,19 @@ const data = [
 ]
 
 const Testimonials = () => {
-  
   return (
     <section id={'testimonials'}>
-      <h5>Review from Clients</h5>
+      <h5>Review from Clients and Colleagues</h5>
       <h2>Testimonials</h2>
 
       <Swiper
         className='main-container testimonials__container'
-        modules={[Pagination]}
+        modules={[Pagination, Autoplay]}
         spaceBetween={40}
+        autoplay={{
+          delay: 5000,
+          disableOnInteraction: false
+        }}
         slidesPerView={1}
         pagination={true}
       >
@@ -61,7 +64,7 @@ const Testimonials = () => {
               <small className='client__review'>{review}</small>
             </SwiperSlide>
           )
-          })}
+        })}
       </Swiper>
     </section>
   )
