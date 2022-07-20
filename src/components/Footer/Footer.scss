@@ -1,1 +1,78 @@
 @import '../../variables';
+
+footer {
+    background: $ForegroundDark;
+    padding: 3rem 0;
+    text-align: center;
+    font-size: 0.9rem;
+    margin-top: 7rem;
+
+    a {
+        color: $BackgroundColor;
+    }
+
+    .footer__logo {
+        font-size: 2rem;
+        font-weight: 500;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            aspect-ratio: 1;
+            height: 2rem;
+            width: 2rem;
+            margin-left: 0.5rem;
+        }
+    }
+
+    .permalinks {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2rem;
+        margin: 0 auto 3rem;
+    }
+
+    .footer__socials {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        margin-bottom: 4rem;
+
+        a {
+            background: $BackgroundColor;
+            color: $ForegroundDark;
+            padding: 0.8rem;
+            border-radius: 0.7rem;
+            display: flex;
+            border: 1px solid transparent;
+
+            &:hover {
+                background: transparent;
+                color: $BackgroundColor;
+                border-color: $BackgroundColor;
+            }
+        }
+
+    }
+
+    .footer__copyright {
+        margin-bottom: 4rem;
+        color: $BackgroundColor;
+    }
+
+}
+
+
+/*Media Queries (Small Devices)*/
+@media screen and (max-width: 600px) {
+    .permalinks {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .footer__socials {
+        margin-bottom: 2.6rem;
+    }
+}
