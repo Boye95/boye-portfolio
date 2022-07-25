@@ -60,6 +60,12 @@
             
             .service__list {
                 color: $ForegroundDark;
+
+                li {
+                    .service__list-icon {
+                        color: $ForegroundDark;
+                    }
+                }
             }
         }
     }
