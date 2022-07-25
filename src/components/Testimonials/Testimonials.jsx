@@ -1,10 +1,10 @@
 import React from 'react'
 import './Testimonials.scss'
 
-import Avatar1 from '../../files/testimony.png'
-import Avatar2 from '../../files/testimony.png'
-import Avatar3 from '../../files/testimony.png'
-import Avatar4 from '../../files/testimony.png'
+import Avatar1 from '../../files/testimony.jpg'
+import Avatar2 from '../../files/testimony.jpg'
+import Avatar3 from '../../files/testimony.jpg'
+import Avatar4 from '../../files/testimony.jpg'
 import { Pagination, Autoplay } from 'swiper'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/scss'
@@ -13,27 +13,27 @@ import 'swiper/scss/pagination'
 const data = [
   {
     avatar: Avatar1,
-    name: 'Ben Jackizz',
+    name: 'Halimatsadiat Yaya',
     review:
-      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque beatae culpa dolorem error eum, expedita illo laboriosam magni mollitia perferendis provident quae quaerat quidem quod sint? Consectetur minima necessitatibus quam?'
+      'Samuel Folaranmi is an excellent developer who pays attention to details with good interpersonal relationship. I enjoyed working on a project with him.'
   },
   {
     avatar: Avatar2,
-    name: 'Hugh  Remi',
+    name: 'Halimatsadiat Yaya',
     review:
-      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque beatae culpa dolorem error eum, expedita illo laboriosam magni mollitia perferendis provident quae quaerat quidem quod sint? Consectetur minima necessitatibus quam?'
+      'Samuel Folaranmi is an excellent developer who pays attention to details with good interpersonal relationship. I enjoyed working on a project with him.'
   },
   {
     avatar: Avatar3,
-    name: 'Ajayi Ogidiolu',
+    name: 'Halimatsadiat Yaya',
     review:
-      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque beatae culpa dolorem error eum, expedita illo laboriosam magni mollitia perferendis provident quae quaerat quidem quod sint? Consectetur minima necessitatibus quam?'
+      'Samuel Folaranmi is an excellent developer who pays attention to details with good interpersonal relationship. I enjoyed working on a project with him.'
   },
   {
     avatar: Avatar4,
-    name: 'Baba Sule',
+    name: 'Halimatsadiat Yaya',
     review:
-      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque beatae culpa dolorem error eum, expedita illo laboriosam magni mollitia perferendis provident quae quaerat quidem quod sint? Consectetur minima necessitatibus quam?'
+      'Samuel Folaranmi is an excellent developer who pays attention to details with good interpersonal relationship. I enjoyed working on a project with him.'
   }
 ]
 
