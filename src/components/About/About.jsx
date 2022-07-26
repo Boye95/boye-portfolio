@@ -3,7 +3,7 @@ import './About.scss'
 
 import ME from '../../files/boyeside.png'
 import { FaAward } from 'react-icons/fa'
-import { FiUsers } from 'react-icons/fi'
+// import { FiUsers } from 'react-icons/fi'
 import { VscFolderLibrary } from 'react-icons/vsc'
 
 const About = () => {
@@ -24,15 +24,15 @@ const About = () => {
               <h5>Experience</h5>
               <small>2+ Years Working</small>
             </article>
-            <article className='about__card'>
+            {/* <article className='about__card'>
               <FiUsers className='about__icon' />
               <h5>Clients</h5>
               <small>60+ Clients</small>
-            </article>
+            </article> */}
             <article className='about__card'>
               <VscFolderLibrary className='about__icon' />
               <h5>Projects</h5>
-              <small>50+ Projects</small>
+              <small>20+ Projects</small>
             </article>
           </div>
           <p>
