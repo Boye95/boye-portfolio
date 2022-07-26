@@ -4,7 +4,7 @@ import './Portfolio.scss'
 import IMG1 from '../../files/finite.PNG'
 import IMG2 from '../../files/hometeach.PNG'
 import IMG3 from '../../files/fuelerUI.PNG'
-import IMG4 from '../../files/reactdoc.PNG'
+import IMG4 from '../../files/library.PNG'
 import IMG5 from '../../files/calculator.PNG'
 import IMG6 from '../../files/moneybuddy.PNG'
 
@@ -35,9 +35,9 @@ const data = [
   {
     id: 4,
     image: IMG4,
-    title: 'React JS documentation',
-    github: 'https://github.com/Boye95/React-Documentation',
-    demo: 'https://codepen.io/boye95/full/zYEWdVM'
+    title: 'Express Library App: a simple library app',
+    github: 'https://github.com/Boye95/express-locallibrary-tutorial',
+    demo: 'https://fringuante-baguette-12236.herokuapp.com/'
   },
   {
     id: 5,
