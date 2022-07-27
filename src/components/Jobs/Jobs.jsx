@@ -52,25 +52,16 @@ const Jobs = () => (
     <h2>Work History</h2>
 
     <Tabs className='main-container jobs__container'>
-      {data.map(({ organization }, index) => {
-        return (
-          <TabList>
-            <Tab key={index} className='tab'>
-              {organization}
+      <TabList>
+        {data.map(({ organization }, index) => {
+          return (
+            <Tab key={index}>
+              <img src={organization.orgLogo} alt={organization.organization} />
             </Tab>
-          </TabList>
-        )
-      })}
-
-      {data.map(({ orgLogo, role, organization, duration, points }, index) => {
-        return (
-          <TabPanel key={index} className='tab__panels'>
-            <div className='org__logo'>
-              <img src={orgLogo} alt='Org Logo' />
-            </div>
-          </TabPanel>
-        )
-      })}
+          )
+        }
+        )}
+      </TabList>
     </Tabs>
   </section>
 )
