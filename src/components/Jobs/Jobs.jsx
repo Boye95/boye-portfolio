@@ -4,10 +4,14 @@ import './Jobs.scss'
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs'
 import 'react-tabs/style/react-tabs.css'
 
+import zuri from '../../files/zuri.jpg'
+import bet9ja from '../../files/bet9ja.jpeg'
+import kkon from '../../files/kkontech.jpg'
+
 const data = [
   {
-    orgLogo: Avatar1,
-    role: 'Frontend Developer',
+    orgLogo: zuri,
+    role: 'Frontend Developer(Intern)',
     organization: 'Zuri Team, Inc',
     duration: 'Jan 2021 - Jun 2021',
     points: [
@@ -18,22 +22,28 @@ const data = [
     ]
   },
   {
-    avatar: Avatar2,
-    name: 'Halimatsadiat Yaya',
-    review:
-      'Samuel Folaranmi is an excellent developer who pays attention to details with good interpersonal relationship. I enjoyed working on a project with him.'
+    orgLogo: bet9ja,
+    role: 'Cahier',
+    organization: 'KC Gaming Networks (BET9JA)',
+    duration: 'Feb 2017 - Apr 2018',
+    points: [
+      'Interfaced with customers/punters',
+      "Staked the customers' games on time and avoided errors",
+      "Handled the customers' complaints on the spot",
+      'Managed the till and kept a balanced account'
+    ]
   },
   {
-    avatar: Avatar3,
-    name: 'Halimatsadiat Yaya',
-    review:
-      'Samuel Folaranmi is an excellent developer who pays attention to details with good interpersonal relationship. I enjoyed working on a project with him.'
-  },
-  {
-    avatar: Avatar4,
-    name: 'Halimatsadiat Yaya',
-    review:
-      'Samuel Folaranmi is an excellent developer who pays attention to details with good interpersonal relationship. I enjoyed working on a project with him.'
+    orgLogo: kkon,
+    role: 'Network Monitor/Customer Service Representative/Tech Support',
+    organization: 'KKONTech',
+    duration: 'Aug 2015 - Aug 2016',
+    points: [
+      'Monitored network uptime and downtime',
+      'Reported to field engineers on network status and advised them to work on it if need be',
+      "Made daily reports of customers' network performances",
+      "Attended to customers' calls and took their complaints"
+    ]
   }
 ]
 const Jobs = () => (
@@ -42,17 +52,25 @@ const Jobs = () => (
     <h2>Work History</h2>
 
     <Tabs className='main-container jobs__container'>
-      <TabList>
-        <Tab>Title 1</Tab>
-        <Tab>Title 2</Tab>
-      </TabList>
+      {data.map(({ organization }, index) => {
+        return (
+          <TabList>
+            <Tab key={index} className='tab'>
+              {organization}
+            </Tab>
+          </TabList>
+        )
+      })}
 
-      <TabPanel>
-        <h2>Any content 1</h2>
-      </TabPanel>
-      <TabPanel>
-        <h2>Any content 2</h2>
-      </TabPanel>
+      {data.map(({ orgLogo, role, organization, duration, points }, index) => {
+        return (
+          <TabPanel key={index} className='tab__panels'>
+            <div className='org__logo'>
+              <img src={orgLogo} alt='Org Logo' />
+            </div>
+          </TabPanel>
+        )
+      })}
     </Tabs>
   </section>
 )
