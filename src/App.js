@@ -1,6 +1,6 @@
 import React from "react";
 
-import { About, Contact, Experience, Footer, Header, Nav, Portfolio, Services, Testimonials } from './components';
+import { About, Contact, Experience, Footer, Header, Jobs, Nav, Portfolio, Testimonials } from './components';
 
 
 /**
@@ -16,7 +16,7 @@ function App() {
       <Nav />
       <About />
       <Experience />
-      <Services />
+      <Jobs />
       <Portfolio />
       <Testimonials />
       <Contact />
