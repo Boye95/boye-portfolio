@@ -21,8 +21,13 @@
             border: 0.4rem solid $BackgroundColor;
         }
 
-        .client__name, .client__title {
+        .client__name {
             color: $BackgroundColor;
+        }
+
+        .client__title {
+            color: $BackgroundColor;
+            font-weight: 300;
         }
         .client__review {
             color: $ForegroundWhite;

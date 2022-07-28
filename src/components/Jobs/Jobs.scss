@@ -4,34 +4,36 @@
     .tab__body {
         background: $ForegroundDark;
         color: $ForegroundWhite;
+        border-radius: 1rem 1rem 0 0;
     }
 
     .tab {
         background: $BackgroundColor;
 
-        &:focus {
-            outline: none;
+        // &:focus {
+        //     outline: none;
 
-            &:after {
-                content: "";
-                position: absolute;
-                height: 5px;
-                left: -4px;
-                right: -4px;
-                bottom: -5px;
-                background: $ForegroundDark;
-            }
-        }
+        //     &:after {
+        //         content: "";
+        //         position: absolute;
+        //         height: 5px;
+        //         left: -4px;
+        //         right: -4px;
+        //         bottom: -5px;
+        //         background: $ForegroundDark;
+        //     }
+        // }
     }
 
     .tpanel {
         background: $ForegroundDark;
         color: $ForegroundWhite;
+        border-radius: 0 0 1rem 1rem;
 
         .jobs__container__inner {
             display: flex;
-            flex-direction: column;
-            margin-left: 1rem;
+            gap: 1rem;
+            padding: 2rem;
             
             img {
                 width: 2rem;
@@ -40,7 +42,14 @@
             }
 
             .org__details {
-
+                h4, p {
+                    font-size: 0.9rem;
+                    opacity: 0.9;
+                }
+                ul {
+                    font-size: 0.8rem;
+                    margin-left: 1rem;
+                }
             }
         }
 
@@ -53,4 +62,10 @@
 @media screen and (max-width: 1024px) {}
 
 // Media Queries (SM)
-@media screen and (max-width: 600px) {}
+@media screen and (max-width: 600px) {
+    .main-container.jobs__container {
+        .tab {
+            font-size: 0.8rem;
+        }
+    }
+}
