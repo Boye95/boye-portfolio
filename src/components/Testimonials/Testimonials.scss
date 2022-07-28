@@ -23,15 +23,19 @@
 
         .client__name {
             color: $BackgroundColor;
+            font-size: 0.9rem;
         }
 
         .client__title {
             color: $BackgroundColor;
             font-weight: 300;
+            font-size: 0.8rem;
+            font-style: italic;
         }
         .client__review {
             color: $ForegroundWhite;
             opacity: 0.9;
+            font-size: 1rem;
             font-weight: 300;
             display: block;
             width: 80%;

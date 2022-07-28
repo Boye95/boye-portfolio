@@ -8,6 +8,7 @@ import { AiFillGithub } from 'react-icons/ai'
 import emailjs from '@emailjs/browser'
 
 const Contact = () => {
+
   const form = useRef()
 
   const sendEmail = e => {
@@ -23,6 +24,7 @@ const Contact = () => {
       .then(
         result => {
           console.log(result.text)
+          alert('Message sent!');
         },
         error => {
           console.log(error.text)
@@ -93,6 +95,7 @@ const Contact = () => {
           <button type='submit' className='btn btn-primary'>
             Send Message
           </button>
+          <p></p>
         </form>
       </div>
     </section>
