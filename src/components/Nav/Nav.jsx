@@ -5,7 +5,7 @@ import './Nav.scss'
 import { AiOutlineHome, AiOutlineUser } from 'react-icons/ai';
 import { BiMessageAltEdit } from 'react-icons/bi';
 import { BiBook } from 'react-icons/bi';
-import { RiServiceLine } from 'react-icons/ri';
+import { GiSuitcase } from 'react-icons/gi';
 import { useState } from 'react';
 
 const Nav = () => {
@@ -35,11 +35,11 @@ const Nav = () => {
         <BiBook />
       </a>
       <a
-        href={'#jobs'}
-        className={activeNav === 'jobs' ? 'active' : ''}
-        onClick={() => setActiveNav('jobs')}
+        href={'#portfolio'}
+        className={activeNav === 'portfolio' ? 'active' : ''}
+        onClick={() => setActiveNav('portfolio')}
       >
-        <RiServiceLine />
+        <GiSuitcase />
       </a>
       <a
         href={'#contact'}

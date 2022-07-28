@@ -53,15 +53,64 @@ const Jobs = () => (
 
     <Tabs className='main-container jobs__container'>
       <TabList>
-        {data.map(({ organization }, index) => {
-          return (
-            <Tab key={index}>
-              <img src={organization.orgLogo} alt={organization.organization} />
-            </Tab>
-          )
-        }
-        )}
+        <Tab>Zuri Team, Inc</Tab>
+        <Tab>KC Gaming Networks</Tab>
+        <Tab>KKONTech</Tab>
       </TabList>
+
+      <TabPanel>
+        <div className='jobs__container__inner'>
+          <div className="org__logo">
+            <img src={zuri} alt="" />
+          </div>
+          <div className="org__details">
+            <h3>{data[0].organization}</h3>
+            <h4>{data[0].role}</h4>
+            <p>{data[0].duration}</p>
+            <ul>
+              {data[0].points.map((point, index) => (
+                <li key={index}>{point}</li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </TabPanel>
+
+      <TabPanel>
+        <div className='jobs__container__inner'>
+          <div className="org__logo">
+            <img src={bet9ja} alt="" />
+          </div>
+          <div className="org__details">
+            <h3>{data[1].organization}</h3>
+            <h4>{data[1].role}</h4>
+            <p>{data[1].duration}</p>
+            <ul>
+              {data[1].points.map((point, index) => (
+                <li key={index}>{point}</li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </TabPanel>
+
+      <TabPanel>
+        <div className='jobs__container__inner'>
+          <div className="org__logo">
+            <img src={kkon} alt="" />
+          </div>
+          <div className="org__details">
+            <h3>{data[2].organization}</h3>
+            <h4>{data[2].role}</h4>
+            <p>{data[2].duration}</p>
+            <ul>
+              {data[2].points.map((point, index) => (
+                <li key={index}>{point}</li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </TabPanel>
     </Tabs>
   </section>
 )
