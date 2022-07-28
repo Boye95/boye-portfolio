@@ -7,6 +7,7 @@ import 'react-tabs/style/react-tabs.css'
 import zuri from '../../files/zuri.jpg'
 import bet9ja from '../../files/bet9ja.jpeg'
 import kkon from '../../files/kkontech.jpg'
+import 'react-tabs/style/react-tabs.scss';
 
 const data = [
   {
@@ -51,14 +52,14 @@ const Jobs = () => (
     <h5>Where I've Worked</h5>
     <h2>Work History</h2>
 
-    <Tabs className='main-container jobs__container'>
-      <TabList>
+    <Tabs className='main-container jobs__container' id="controlled-tabs" selectedTabClassName="tab__body">
+      <TabList className='tab'>
         <Tab>Zuri Team, Inc</Tab>
         <Tab>KC Gaming Networks</Tab>
         <Tab>KKONTech</Tab>
       </TabList>
 
-      <TabPanel>
+      <TabPanel className='tpanel'>
         <div className='jobs__container__inner'>
           <div className="org__logo">
             <img src={zuri} alt="" />
@@ -76,7 +77,7 @@ const Jobs = () => (
         </div>
       </TabPanel>
 
-      <TabPanel>
+      <TabPanel className='tpanel'>
         <div className='jobs__container__inner'>
           <div className="org__logo">
             <img src={bet9ja} alt="" />
@@ -94,7 +95,7 @@ const Jobs = () => (
         </div>
       </TabPanel>
 
-      <TabPanel>
+      <TabPanel className='tpanel'>
         <div className='jobs__container__inner'>
           <div className="org__logo">
             <img src={kkon} alt="" />

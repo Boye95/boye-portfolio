@@ -1,20 +1,56 @@
 @import '../../variables';
 
 .main-container.jobs__container {
-    .org__logo {
-        width: 2rem;
-        height: 2rem;
-        border-radius: 1rem;
+    .tab__body {
+        background: $ForegroundDark;
+        color: $ForegroundWhite;
+    }
+
+    .tab {
+        background: $BackgroundColor;
+
+        &:focus {
+            outline: none;
+
+            &:after {
+                content: "";
+                position: absolute;
+                height: 5px;
+                left: -4px;
+                right: -4px;
+                bottom: -5px;
+                background: $ForegroundDark;
+            }
+        }
+    }
+
+    .tpanel {
+        background: $ForegroundDark;
+        color: $ForegroundWhite;
+
+        .jobs__container__inner {
+            display: flex;
+            flex-direction: column;
+            margin-left: 1rem;
+            
+            img {
+                width: 2rem;
+                height: 2rem;
+                border-radius: 50%;
+            }
+
+            .org__details {
+
+            }
+        }
+
     }
 }
 
 
 
 // Media Queries (MD)
-@media screen and (max-width: 1024px) {
-}
+@media screen and (max-width: 1024px) {}
 
 // Media Queries (SM)
-@media screen and (max-width: 600px) {
-
-}
+@media screen and (max-width: 600px) {}
