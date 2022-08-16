@@ -7,6 +7,7 @@ import IMG3 from '../../files/fuelerUI.PNG'
 import IMG4 from '../../files/library.PNG'
 import IMG5 from '../../files/calculator.PNG'
 import IMG6 from '../../files/moneybuddy.PNG'
+import IMG7 from '../../files/portfolio.PNG'
 
 const data = [
   {
@@ -52,6 +53,13 @@ const data = [
     title: 'MoneyBuddyUI: a platform for students to earn while learning',
     github: 'https://github.com/Boye95/MoneyBuddyUI',
     demo: 'https://moneybuddy.netlify.app/'
+  },
+  {
+    id: 7,
+    image: IMG7,
+    title: 'Boye\'s Portfolio: First version of Boye\'s portfolio website',
+    github: 'https://github.com/Boye95/boye-portfolio',
+    demo: 'https://adeboye.netlify.app/'
   }
 ]
 

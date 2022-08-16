@@ -11,8 +11,7 @@ import 'swiper/scss'
 import 'swiper/scss/pagination'
 
 const data = [
-  {
-    avatar: halimat,
+  {    avatar: halimat,
     name: 'Halimatsadiat Yaya',
     title: 'User Interface and User Research Designer',
     review:
@@ -66,7 +65,7 @@ const Testimonials = () => {
               </div>
               <h5 className='client__name'>{name}</h5>
               <h6 className='client__title'>{title}</h6>
-              <small className='client__review'>{review}</small>
+              <small className='client__review'>{review}</small>   
             </SwiperSlide>
           )
         })}
