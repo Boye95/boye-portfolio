@@ -8,6 +8,7 @@ import IMG4 from '../../files/library.PNG'
 import IMG5 from '../../files/calculator.PNG'
 import IMG6 from '../../files/moneybuddy.PNG'
 import IMG7 from '../../files/portfolio.PNG'
+import IMG8 from '../../files/theblogx.png'
 
 const data = [
   {
@@ -60,7 +61,14 @@ const data = [
     title: 'Boye\'s Portfolio: First version of Boye\'s portfolio website',
     github: 'https://github.com/Boye95/boye-portfolio',
     demo: 'https://adeboye.netlify.app/'
-  }
+  },
+  {
+    id: 8,
+    image: IMG8,
+    title: 'A MERN Stack Blog App with Authentication',
+    github: 'https://github.com/Boye95/theBlog',
+    demo: 'https://theblogx.onrender.com'
+  },
 ]
 
 const Portfolio = () => {
@@ -70,7 +78,7 @@ const Portfolio = () => {
       <h2>Portfolio</h2>
 
       <div className='main-container portfolio__container'>
-        {data.map(({ id, image, title, github, demo }) => {
+        {[...data].reverse().map(({ id, image, title, github, demo }) => {
           return (
             <article key={id} className='portfolio__item'>
               <div className='portfolio__item-image'>
