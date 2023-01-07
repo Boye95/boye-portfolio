@@ -65,7 +65,7 @@ const data = [
   {
     id: 8,
     image: IMG8,
-    title: 'A MERN Stack Blog App with Authentication',
+    title: 'A MERN Stack Blog App with support for AI generated post',
     github: 'https://github.com/Boye95/theBlog',
     demo: 'https://theblogx.onrender.com'
   },
