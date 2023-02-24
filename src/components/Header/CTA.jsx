@@ -1,4 +1,4 @@
-import Resume from '../../files/Resume-Samuel-Folaranmi.pdf';
+import Resume from '../../files/Latest-Samuel.pdf';
 
 const CTA = () => {
     return (
