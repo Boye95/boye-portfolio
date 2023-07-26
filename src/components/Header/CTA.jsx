@@ -1,4 +1,4 @@
-import Resume from '../../files/Latest-Samuel.pdf';
+import Resume from '../../files/Folaranmi Samuel.pdf';
 
 const CTA = () => {
     return (
